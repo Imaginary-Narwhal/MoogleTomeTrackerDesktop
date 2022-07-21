@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>moogleicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\coolvetica-compressed.ttf" />
+    <None Remove="Fonts\eorzea.ttf" />
+    <None Remove="Fonts\Jupiter.ttf" />
+    <None Remove="Fonts\Ovink.ttf" />
+    <None Remove="Images\cancel.png" />
+    <None Remove="Images\okay.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="moogleicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdonisUI" Version="1.17.1" />
+    <PackageReference Include="AdonisUI.ClassicTheme" Version="1.17.1" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.43" />
+    <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestoreWindowPlace" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\coolvetica-compressed.ttf" />
+    <Resource Include="Fonts\eorzea.ttf" />
+    <Resource Include="Fonts\Jupiter.ttf" />
+    <Resource Include="Fonts\Ovink.ttf" />
+    <Resource Include="Images\cancel.png" />
+    <Resource Include="Images\okay.png" />
+  </ItemGroup>
+
+</Project>
